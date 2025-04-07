@@ -1,0 +1,431 @@
+/* About Page Styles */
+
+.about-page {
+  margin-bottom: 3rem;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Story Section */
+.about-story {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--gray-color);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background-color: #f8fafc;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--gray-color);
+  font-size: 1rem;
+}
+
+/* Mission & Values Section */
+.about-mission {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+.mission-content {
+  margin-top: 3rem;
+}
+
+.mission-statement {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.mission-statement h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.mission-statement p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--gray-color);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.value-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.value-card p {
+  color: var(--gray-color);
+  line-height: 1.6;
+}
+
+/* Leadership Section */
+.about-leadership {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.leader-card {
+  background-color: #f8fafc;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+.leader-card:hover {
+  transform: translateY(-10px);
+}
+
+.leader-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.leader-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.leader-card:hover .leader-image img {
+  transform: scale(1.1);
+}
+
+.leader-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.5rem 1.5rem 0.5rem;
+  color: var(--dark-color);
+}
+
+.leader-position {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin: 0 1.5rem 1rem;
+  font-weight: 500;
+}
+
+.leader-bio {
+  font-size: 0.95rem;
+  color: var(--gray-color);
+  line-height: 1.6;
+  margin: 0 1.5rem 1.5rem;
+}
+
+/* Achievements Section */
+.about-achievements {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+.achievements-timeline {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  position: relative;
+}
+
+.achievements-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  width: 2px;
+  background-color: var(--primary-color);
+}
+
+.achievement-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.achievement-item:last-child {
+  margin-bottom: 0;
+}
+
+.achievement-year {
+  width: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.achievement-content {
+  padding-left: 3rem;
+}
+
+.achievement-content h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.achievement-content p {
+  color: var(--gray-color);
+  line-height: 1.6;
+}
+
+.achievement-content::before {
+  content: '';
+  position: absolute;
+  left: 116px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid var(--primary-color);
+  top: 8px;
+}
+
+/* Community Section */
+.about-community {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.community-content {
+  margin-top: 3rem;
+}
+
+.community-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--gray-color);
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.initiative-card {
+  background-color: #f8fafc;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+.initiative-card:hover {
+  transform: translateY(-10px);
+}
+
+.initiative-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.initiative-card p {
+  color: var(--gray-color);
+  line-height: 1.6;
+}
+
+/* About CTA Modification */
+.about-cta {
+  background: linear-gradient(135deg, var(--primary-color) 30%, var(--secondary-color) 100%);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-stats {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .achievements-timeline::before {
+    left: 80px;
+  }
+  
+  .achievement-year {
+    width: 70px;
+    font-size: 1.3rem;
+  }
+  
+  .achievement-content {
+    padding-left: 2rem;
+  }
+  
+  .achievement-content::before {
+    left: 76px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .values-grid,
+  .leadership-grid,
+  .initiatives-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .mission-statement h3 {
+    font-size: 1.5rem;
+  }
+  
+  .mission-statement p {
+    font-size: 1.1rem;
+  }
+  
+  .achievements-timeline::before {
+    display: none;
+  }
+  
+  .achievement-item {
+    flex-direction: column;
+  }
+  
+  .achievement-year {
+    margin-bottom: 0.5rem;
+  }
+  
+  .achievement-content {
+    padding-left: 0;
+  }
+  
+  .achievement-content::before {
+    display: none;
+  }
+} 

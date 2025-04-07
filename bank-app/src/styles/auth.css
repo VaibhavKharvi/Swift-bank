@@ -1,0 +1,133 @@
+/* Authentication Pages Styles */
+
+.auth-page {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+}
+
+.auth-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2.5rem;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.auth-header p {
+  color: var(--gray-color);
+}
+
+.auth-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: var(--gray-color);
+}
+
+.input-group .form-control {
+  padding-left: 40px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.form-check-label {
+  font-size: 0.9rem;
+  color: var(--gray-color);
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.auth-footer {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 1.5rem;
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.auth-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 576px) {
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .auth-container {
+    width: 90%;
+  }
+} 
